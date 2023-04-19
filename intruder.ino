@@ -22,11 +22,15 @@ if(val==0){
 // digitalWrite(LED,HIGH);
 lcd.setCursor(2,0);   
 	lcd.print("Intruder");
+	lcd.setCursor(2,1);
+	lcd.print("Lights off");
 }
 else{
 // digitalWrite(LED,LOW);
 lcd.setCursor(2,0);
-	lcd.print("NO Intruder");  
+	lcd.print("NO Intruder");
+	lcd.setCursor(2,1);
+	lcd.print("Lights on");
 }
 
 }
